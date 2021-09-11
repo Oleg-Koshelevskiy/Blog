@@ -690,7 +690,7 @@ body {
     }
     .menu > li > a {
         margin-left: 10px;
-        margin-left: 10px;
+        text-align: left;
     }
     .nav-mobile-menu {
         width: 15px;
@@ -720,12 +720,11 @@ body {
         opacity: 0;
         visibility: hidden;
         position: fixed;
-        top: 0;
-        right: 0;
+        top: 0;        
         bottom: 0;
         width: 280px;
         max-width: 280px;
-        transform: translateX(150%);
+        transform: translateX(-150%);
         transition: all 500ms ease-in-out;
         z-index: 10;
     }
@@ -744,10 +743,10 @@ body {
         opacity: 1;
         visibility: visible;
         transform: translateX(0);
-        top: 50px;
-        background-color: #292f36;
+        top: 60px;
+        background-color: #1d2026;
         height: 210px;
-        width: 100%;        
+        width: 100px;        
     }
     .col-xs-hidden {
         max-width: 0px;
