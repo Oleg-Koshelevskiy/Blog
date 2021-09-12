@@ -718,6 +718,7 @@ body {
     visibility: hidden;
     position: fixed;
     top: 0;
+    right: 0;
     bottom: 0;
     width: 280px;
     max-width: 280px;
@@ -740,11 +741,11 @@ body {
   .navigation.active-menu {
     opacity: 1;
     visibility: visible;
-    transform: translateX(200%);
+    transform: translateX(0);
     top: 60px;
     background-color: #1d2026;
     height: 210px;
-    width: 100px;
+    width: 150px;
   }
   .col-xs-hidden {
     max-width: 0px;
