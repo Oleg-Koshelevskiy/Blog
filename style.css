@@ -107,12 +107,22 @@ body {
 
 /* main - slider */
 
+.splide__track {
+  height: 100%;
+  margin-top: 20px;
+}
+
+.splide__slide img {
+  max-width: 100%;
+}
+
 .slider {
   background: url(images/slider-bgr.png) no-repeat 50% 50%;
   height: 660px;
 }
 .slider-info {
   margin-top: 225px;
+  /* z-index: 100;  не спрацьовує? */
 }
 .main-header {
   font-family: "Quattrocento Sans", sans-serif;
@@ -626,6 +636,10 @@ body {
   .teammate-info {
     width: 60.5%;
   }
+  .splide__track {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
 }
 
 /* desctop */
@@ -753,6 +767,14 @@ body {
   .search {
     display: none;
   }
+
+  .slider {
+    height: 320px;
+  }
+  .splide__track {
+    margin-top: 10px;
+  }
+
   .info-btns {
     flex-direction: column;
   }
