@@ -107,23 +107,46 @@ body {
 
 /* main - slider */
 
-.splide__track {
-  height: 100%;
-  margin-top: 20px;
-}
-
-.splide__slide img {
+.splide__slide {
   max-width: 100%;
+  height: 660px;
+  /* background-size: 100% 100%; */
 }
 
 .slider {
-  background: url(images/slider-bgr.png) no-repeat 50% 50%;
   height: 660px;
+  position: relative;
 }
-.slider-info {
-  margin-top: 225px;
-  /* z-index: 100;  не спрацьовує? */
+
+.splide__list {
 }
+.slide0 {
+  background: url(images/slider-bgr.png) no-repeat 50% 50%;
+  background-size: cover;
+}
+.slide1 {
+  background: url(images/24701-nature-natural-beauty.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+.slide2 {
+  background: url(images/dolomites-2179602_1920.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+.slide3 {
+  background: url(images/Zugpsitze_mountain.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+.slide4 {
+  background: url(images/customLogo.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+.slider-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .main-header {
   font-family: "Quattrocento Sans", sans-serif;
   font-weight: bold;
@@ -637,8 +660,8 @@ body {
     width: 60.5%;
   }
   .splide__track {
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
 
@@ -771,8 +794,8 @@ body {
   .slider {
     height: 320px;
   }
-  .splide__track {
-    margin-top: 10px;
+  .splide__arrow {
+    top: 75%;
   }
 
   .info-btns {
